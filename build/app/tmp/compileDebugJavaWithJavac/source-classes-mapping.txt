@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+br/com/academiadoflutter/vakinha_burguer_mobile/BuildConfig.java
+ br.com.academiadoflutter.vakinha_burguer_mobile.BuildConfig
