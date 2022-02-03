@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vakinha_burguer_mobile/app/core/ui/widgets/vakinha_button.dart';
 import 'package:get/get.dart';
-import 'package:vakinha_burguer_mobile/app/routes/splash_routes.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({Key? key}) : super(key: key);
