@@ -1,4 +1,4 @@
-#Fri Feb 04 16:40:58 BRT 2022
+#Sun Feb 06 15:28:24 BRT 2022
 base.0=/home/matheus/workspace/vakinha_burguer_mobile/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

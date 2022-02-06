@@ -1,16 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 import 'package:vakinha_burguer_mobile/app/core/services/auth_service.dart';
+import 'package:vakinha_burguer_mobile/app/core/services/shopping_cart_service.dart';
 import 'package:vakinha_burguer_mobile/app/modules/menu/menu_bindings.dart';
 import 'package:vakinha_burguer_mobile/app/modules/menu/menu_page.dart';
+import 'package:vakinha_burguer_mobile/app/modules/order/shopping_cart/shopping_cart_bindings.dart';
+import 'package:vakinha_burguer_mobile/app/modules/order/shopping_cart/shopping_cart_page.dart';
 
 class HomeController extends GetxController {
   static const NAVIGATOR_KEY = 1;
+  final ShoppingCartService _shoppingCartService;
+
+
+  HomeController({
+    required ShoppingCartService shoppingCartService,
+  }) : _shoppingCartService = shoppingCartService;
 
   final _tabIndex = 0.obs;
   final _tabs = ['/menu', '/order/shopping_cart', '/exit'];
 
   int get tabIndex => _tabIndex.value;
+
+  int get totalProductsInShoppingCart => _shoppingCartService.totalProducts;
 
   set tabIndex(int index) {
     _tabIndex(index);
@@ -34,6 +46,13 @@ class HomeController extends GetxController {
       );
     }
 
-    if (settings.name == '/order/shopping_cart') {}
+    if (settings.name == '/order/shopping_cart') {
+      return GetPageRoute(
+        settings: settings,
+        page: () => const ShoppingCartPage(),
+        binding: ShoppingCartBindings(),
+        transition: Transition.fadeIn,
+      );
+    }
   }
 }
