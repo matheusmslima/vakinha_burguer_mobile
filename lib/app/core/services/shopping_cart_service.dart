@@ -41,4 +41,6 @@ class ShoppingCartService extends GetxService {
       );
     }
   }
+
+  void clear() => _shoppingCart.clear();
 }

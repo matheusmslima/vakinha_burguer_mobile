@@ -38,23 +38,23 @@ class ProductTile extends StatelessWidget {
                 ),
               ),
             ),
-            Expanded(
-              child: Container(
-                color: Colors.white,
-                padding: const EdgeInsets.all(10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text(
-                      product.name,
-                      style: VakinhaUI.textBold,
-                    ),
-                    Text(
-                      FormatterHelper.formatCurrency(product.price),
-                    ),
-                  ],
-                ),
+            // TODO: REMOVED eXPANDED WIDGET
+            Container(
+              width: context.widthTransformer(reducedBy: 30),
+              color: Colors.white,
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(
+                    product.name,
+                    style: VakinhaUI.textBold,
+                  ),
+                  Text(
+                    FormatterHelper.formatCurrency(product.price),
+                  ),
+                ],
               ),
             ),
           ],
