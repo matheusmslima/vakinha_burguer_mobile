@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/matheus/workspace/vakinha_burguer_mobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/matheusmslima/workspace/vakinha_burguer_mobile/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/matheus/workspace/vakinha_burguer_mobile/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/home/matheusmslima/workspace/vakinha_burguer_mobile/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
